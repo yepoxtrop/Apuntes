@@ -1,1 +1,1 @@
-ECHO est  activado.
+# Apuntes personales bro
