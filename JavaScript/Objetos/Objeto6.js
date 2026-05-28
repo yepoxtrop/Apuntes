@@ -1,3 +1,10 @@
+function Persona(nombre, apellido, email, edad) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.edad = edad;
+}
+
 // Crear objeto
 let persona = {
     nombre:"Neo",
