@@ -12,8 +12,12 @@ function Persona(nombre, apellido, email, edad) {
 // Crear objeto
 let persona = new Persona("neo", "mendez", "neo@example.com", 15);
 
-// Llamada a objeto
-console.log(persona);
+// Agregar propiedades para todos los objetos con protoype
+Persona.prototype.telefono = '+57 XXX-XXX-XX-XX' ;
 
-// llamado a metodo del objeto
-console.log(persona.nombreCompleto())
+// Llamada a objeto
+console.log(persona.telefono);
+
+// Modificacion de nuevo valor
+persona.telefono = '+1 XXX-XXX-XX-XX';
+console.log(persona.telefono);
