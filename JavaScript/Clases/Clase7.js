@@ -1,0 +1,59 @@
+// Crear clase
+// Toda clase hereda de la clase Object
+class Persona extends Object{
+    static contadorPersonas = 0; // Atributo estatico, pertenece a la clase
+
+    constructor(nombre, apellido){
+        super();
+        this._nombre = nombre; // Encapsulamiento con _
+        this._apellido = apellido;
+        Persona.contadorPersonas += 1;
+    }
+    get nombre(){ //metodo get
+        return this._nombre;
+    }
+    set nombre(nombre){ //metodo set
+        this._nombre = nombre;
+    }
+    get apellido(){
+        return this._apellido;
+    }
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
+    nombreCompleto(){
+        return this._nombre + ' ' + this._apellido;
+    }
+    static saludar(){ // metodo estatico que solo lo puede usar la clase, las instancias no pueden
+        console.log("Hi, BRO")
+    }
+    static saludar2(persona){
+        return 'HI ' + persona.nombreCompleto();
+    }
+}
+
+class Empleado extends Persona{ // herencia con extends
+    constructor(nombre, apellido, departamento){
+        super(nombre, apellido); // Envia los valores al metodo constrcutor de la clase padre
+        this._departamento = departamento;
+    }
+    get departamento(){
+        return this._departamento;
+    }
+    set departamento(departamento){
+        this._departamento = departamento;
+    }
+    nombreCompleto(){// Sobreescritura
+        return super.nombreCompleto() + ' ' + this._departamento;
+    }
+    toString(){ // Sobreescritura de metodo de la clase Objtec
+        return this.nombreCompleto()
+    }
+    
+}
+
+let persona = new Persona('Neo', 'Mendez');
+let empleado = new Empleado('Neo', 'Mendez', 'IT'); 
+
+// Buscar valor de atributo estatico
+console.log(Persona.contadorPersonas)
