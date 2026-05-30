@@ -21,7 +21,7 @@ export class Empleado extends Persona{
     }
 
     toString(){
-        return super.toString() + `\nSueldo${this.sueldo}`;
+        return super.toString() + `\nSueldo:${this.sueldo}`;
     }
 
 }

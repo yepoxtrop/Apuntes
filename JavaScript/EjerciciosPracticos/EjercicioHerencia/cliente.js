@@ -2,7 +2,7 @@ import { Persona } from "./persona.js";
 
 export class Cliente extends Persona{
 
-    constructor(nombre, apellido, edad, sueldo){
+    constructor(nombre, apellido, edad){
         super(nombre, apellido, edad);
         this._idCliente = this.idPersona;
         this._fechaRegistro = new Date();
