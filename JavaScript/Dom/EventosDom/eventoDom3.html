@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- Aplicacion a formularios -->
+    <h1 id="titulo"></h1>
+
+
+    <!-- Script JS-->
+    <script>
+        // Evento onload cuando la pagina carga
+        document.getElementById("body").onload = mostrarVetana;
+
+        // Objeto window representa a la ventana del navegador
+        function mostrarVetana(){
+            window.alert("Bienvenido");
+            
+            // Objeto navigator hace referencia al navegador
+            if (navigator.cookieEnabled){
+                document.getElementById("titulo").innerHTML = "Cookies habilitadas";
+            }else{
+                document.getElementById("titulo").innerHTML = "Cookies deshabilitadas";
+            }
+        }
+    </script>
+
+</body>
+</html>

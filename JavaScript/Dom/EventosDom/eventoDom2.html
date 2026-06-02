@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Aplicacion a formularios -->
+    <h1 id="titulo">titulo</h1>
+
+    <!-- Metodo 1 para asociar eventos -->
+    <button onclick="mostrar(this)" >Click Me</button> <!-- Todos los eventos html inician con 'On' -->
+
+    <!-- Metodo 2 para asociar eventos -->
+    <button id="boton2">Click Me</button>
+
+    <!-- Script JS-->
+    <script>
+        // Funcion de metodo 1
+        function mostrar(objeto){
+            objeto.innerHTML = 'Dont Cick Me' 
+        }
+
+        // Funcion metodo 2
+        document.getElementById("boton2").onclick = cambiarTexto; //se para referencia de metodo
+
+        function cambiarTexto(){
+            document.getElementById("boton2").innerHTML = "Click Me More";
+        }
+    </script>
+
+</body>
+</html>
