@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parrafos{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Aplicacion a formularios -->
+    <h1 id="titulo">Formulario</h1>
+
+    <form action="" id="formulario">
+       <label for="nombre">Nombre:</label> 
+       <input type="text" name="nombre" value="neo"/>
+
+       <label for="apellido">Apeliido</label> 
+       <input type="text" name="apellido" value="mendez"/>
+    </form>
+    <button onclick="verDatos()">Ver datos en consola</button><!-- Evento onclick llama a la funcion -->
+
+    <!-- Script JS-->
+    <script>
+        function verDatos(){
+            let formulario = document.forms['formulario'];
+            
+            // Forma 1 de acceder a los datos del form
+            for(let valor of formulario){
+                console.log(valor.value)
+            }
+
+            // Forma 2 para acceder a los datos del form
+            let nombre = formulario['nombre'].value;
+            let apellido = formulario['apellido'].value;
+            console.log(nombre);
+            console.log(apellido);
+
+        }
+    </script>
+
+</body>
+</html>

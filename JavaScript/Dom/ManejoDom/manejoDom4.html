@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parrafos{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="parrafo" class="parrafos">HiBro</p>
+    <p id="parrafo2" class="parrafos">HiBro2</p>
+    <p id="parrafo3" class="parrafos">HiBro3</p>
+
+    <!-- Script JS-->
+    <script>
+        let parrafos = document.getElementsByClassName("parrafos"); // Devuelve una colección de elementos con la clase parrafos
+        console.log(parrafos); // Muestra la colección de elementos en la consola
+
+        for (let i = 0; i < parrafos.length; i++){
+            console.log(parrafos[i].innerHTML);
+        }
+
+        // for of
+        for (let valor of parrafos){
+            console.log(valor.innerHTML);
+        }
+    </script>
+
+</body>
+</html>

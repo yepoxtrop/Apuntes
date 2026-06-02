@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Aplicacion a formularios -->
+    <h1 id="titulo">titulo</h1>
+    <button onclick="mostrar()" >Clik Me</button>
+    <br />
+    <img  id="imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="">
+
+    <!-- Script JS-->
+    <script>
+        function mostrar(){
+            document.getElementById('imagen').src = "http://globalmentoring.com.mx/imagenes/html5.png";
+            document.getElementById('titulo').innerHTML = 'Nuevo Titulo' ; // Se cambia el contenido del titulo 
+        }
+    </script>
+
+</body>
+</html>

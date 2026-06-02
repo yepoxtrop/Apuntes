@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="parrafo">HiBro</p>
+    <p id="parrafo2">HiBro2</p>
+    <p id="parrafo3">HiBro3</p>
+
+    <!-- Script JS-->
+    <script>
+        let parrafos = document.getElementsByTagName("p"); // Devuelve una colección de elementos con la etiqueta "p"
+        console.log(parrafos); // Muestra la colección de elementos en la consola
+
+        for (let i = 0; i < parrafos.length; i++){
+            console.log(parrafos[i].innerHTML);
+        }
+    </script>
+
+</body>
+</html>

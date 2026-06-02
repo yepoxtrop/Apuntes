@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="parrafo"></p>
+
+    <!-- Script JS-->
+    <script>
+        let documento = document; // Objeto que representa el documento HTML cargado en el navegador
+        console.log(documento); // Imprime en la consola del navegador el objeto documento
+
+        let titulo = document.getElementById("titulo"); // Obtiene el elemento HTML con el id "titulo"
+        console.log(titulo); // Imprime en la consola del navegador el elemento HTML con el id "titulo"
+        console.log(titulo.textContent); // Imprime en la consola del navegador el contenido de texto del elemento con id "titulo"
+        console.log(titulo.innerHTML); // Imprime en la consola del navegador el contenido HTML del elemento con id "titulo"
+
+        let parrafo = document.getElementById("parrafo"); // Obtiene el elemento HTML con el id "parrafo"
+        parrafo.innerHTML = '<strong>Este es un párrafo</strong>';
+    </script>
+
+</body>
+</html>
