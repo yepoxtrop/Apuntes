@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    
+    <h1 id="titulo">Formulario</h1>
+    <h1 id="titulo2">Formulario2</h1>
+
+
+    <!-- Script JS-->
+    <script>
+        // Uso de addEventListener
+        // Recibe el evento y una funcion
+        document.getElementById("titulo").addEventListener('click', mensaje);
+        document.getElementById("titulo2").addEventListener('click', (evento)=>{
+            evento.target.innerHTML= 'Se hizo desde funcion flecha'
+        });
+
+        //recibe un evento
+        //target es el elemento que genero el evento
+        function mensaje(evento){
+            evento.target.innerHTML= 'Se hizo click'
+        }
+    </script>
+
+</body>
+</html>

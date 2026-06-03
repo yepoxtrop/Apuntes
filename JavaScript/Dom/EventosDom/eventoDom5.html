@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- Eventos de mouse -->
+    <!-- onmouseover: mouse sobre un elemento -->
+    <!-- onmouseout: mouse fuera de un elemento -->
+    <h1 id="titulo" onmouseover="cambiarColor()" onmouseout="cambiarColor2()">Formulario</h1>
+
+    <!-- onmousedown: mouse con clic preisonado sobre un elemento -->
+    <!-- onmouseup: mouse cuando se suelta el clic sobre un elemento -->
+    <h1 id="titulo2" onmousedown="cambiarColor3()" onmouseup="cambiarColor4()">Formulario2</h1>
+
+
+    <!-- onclick: se activa cuando se da clic el elemento -->
+    <h1 id="titulo3" onclick="cambiarColor5()">Formulario3</h1>
+
+    <!-- Script JS-->
+    <script>
+        function cambiarColor(){
+            let titulo = document.getElementById("titulo");
+            titulo.style.color="red";
+        }
+
+        function cambiarColor2(){
+            let titulo = document.getElementById("titulo");
+            titulo.style.color="black";
+        }
+
+        function cambiarColor3(){
+            let titulo = document.getElementById("titulo2");
+            titulo.style.color="yellow";
+        }
+
+        function cambiarColor4(){
+            let titulo = document.getElementById("titulo2");
+            titulo.style.color="orange";
+        }
+
+        function cambiarColor5(){
+            let titulo = document.getElementById("titulo3");
+            titulo.style.color="purple";
+        }
+    </script>
+
+</body>
+</html>

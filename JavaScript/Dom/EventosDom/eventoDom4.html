@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="titulo">Formulario</h1>
+
+    <form action="">
+        <input type="text" name="nombre" id="campoNombre" onchange="convertir()"> <!-- Evento onchange -->
+    </form>
+
+    <!-- Script JS-->
+    <script>
+        function convertir(){
+            let nombre = document.getElementById("campoNombre");
+            nombre.value = nombre.value.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>
