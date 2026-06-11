@@ -1,0 +1,15 @@
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\bin\Debug\net10.0\MiPrimeraApp.exe
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\bin\Debug\net10.0\MiPrimeraApp.deps.json
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\bin\Debug\net10.0\MiPrimeraApp.runtimeconfig.json
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\bin\Debug\net10.0\MiPrimeraApp.dll
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\bin\Debug\net10.0\MiPrimeraApp.pdb
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.AssemblyInfoInputs.cache
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.AssemblyInfo.cs
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.csproj.CoreCompileInputs.cache
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.sourcelink.json
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.dll
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\refint\MiPrimeraApp.dll
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.pdb
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\MiPrimeraApp.genruntimeconfig.cache
+C:\Users\luis.sarmiento\Desktop\PROYECTOS\Apuntes\C#\MiPrimeraApp\MiPrimeraApp\obj\Debug\net10.0\ref\MiPrimeraApp.dll
