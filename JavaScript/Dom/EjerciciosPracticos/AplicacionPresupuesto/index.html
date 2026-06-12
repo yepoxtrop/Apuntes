@@ -4,37 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sueldo Mensual</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
+    <main class="app">
 
+        <!-- Encabezado -->
+        <section class="hero">
+            <div class="hero__content">
+                <span class="hero__label">Presupuesto Disponible</span>
+                <span class="hero__total" id="valorActual">$0</span>
+            </div>
 
-        <!-- -->
-        <div>
-            <div>
-                <span>Ingresos:</span>
-                <span>$0</span>
+        <!-- Encabezado -->
+            <div class="summary">
+                <div class="summary__item summary__item--income">
+                    <span>Ingresos</span>
+                    <strong id="valorActualIngresos">$0</strong>
+                </div>
+                <div class="summary__item summary__item--expense">
+                    <span>Egresos</span>
+                    <strong id="valorActualEgresos">$0</strong>
+                </div>
             </div>
-            <div>
-                <span>Egresos:</span>
-                <span>$0</span>
-            </div>
-        </div>
+        </section>
 
         <!-- Formulario -->
-        <div>
-            <form action="">
-                <select name="" id="" required>
+        <section class="panel">
+            <form class="form" action="">
+                <select name="" id="opcionValor" required aria-label="Tipo de valor">
                     <option value="ingreso">Ingreso</option>
                     <option value="egreso">Egreso</option>
                 </select>
-                <input type="text" placeholder="Descripcion" required />
-                <input type="text" placeholder="$0" required />
-                <button> Enviar Valores </button>
+                <input type="text" placeholder="Descripcion" required id="descripcionValor"/>
+                <input type="text" placeholder="$0" required id="valor"/>
+                <button id="botonEnviar">Agregar</button>
             </form>
-        </div>
-        <div></div>
+        </section>
+        
+        <!-- Tablas -->
+        <section class="tables">
+            <table class="table table--income">
+                <thead>
+                    <tr>
+                        <th colspan="2">Ingresos</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaIngresos"></tbody>
+            </table>
 
-    </div>
+            <table class="table table--expense">
+                <thead>
+                    <tr>
+                        <th colspan="2">Egresos</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaEgresos"></tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
