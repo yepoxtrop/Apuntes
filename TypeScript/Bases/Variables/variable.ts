@@ -12,6 +12,14 @@ console.log(cadena)
 var estado:Boolean = false;
 console.log(estado?cadena:"No me llamo yepoxtrop");
 
+//Variables especiales
+var ubicacion:any = undefined; //Cualquier tipo de dato
+var contrasena:unknown = null; //Cualquier tipo de dato con validaciones
+//var red:never = ''; //por lo general genera error al ser definido
+
 //Variables undefined y null
 var desconocido:undefined = undefined; //No se puede cambiar su tipo de dato a futuro
 var vacio:null = null; //No se puede cambiar su tipo de dato a futuro
+
+//Variable con doble tipo de valor
+var dni:string|null = '1.00'; //Puede ter un valor de texto o un valor nulo
